@@ -15,9 +15,9 @@ Wrap your content with `NanoScroll.wrap element, options` or `NanoScroll.wrap el
 
 Or, if you have element structure like
 ```
-`<div id="about" class="nano">
+<div id="about" class="nano">
     <div class="nano-content"> ... content here ...  </div>
-</div>`
+</div>
 ```
 You can use `new NanoScroll element, options`
 or `new NanoScroll element, null`
