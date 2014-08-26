@@ -7,6 +7,7 @@ Original version by http://jamesflorentino.github.io/nanoScrollerJS/
 
 This version by Artyom Suchkov (fanasew@gmail.com), Wikidi.
 
+
 Import class with
 `goog.require 'NanoScroll'`
 
