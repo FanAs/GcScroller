@@ -7,13 +7,9 @@ Original version by http://jamesflorentino.github.io/nanoScrollerJS/
 
 This version by Artyom Suchkov (fanasew@gmail.com), Wikidi.
 
-
-Import class with
-`goog.require 'NanoScroll'`
+Import class with `goog.require 'NanoScroll'`
 
 Wrap your content with `NanoScroll.wrap element, options` or `NanoScroll.wrap element, null`
-
-
 
 Or, if you have element structure like
 ```
