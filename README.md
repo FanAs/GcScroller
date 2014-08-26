@@ -4,6 +4,7 @@ Google-Closure-NanoScroller
 NanoScroller without using jquery, works fine with google closure compiler, writed in CoffeeScript.
 
 Original version by http://jamesflorentino.github.io/nanoScrollerJS/
+
 This version by Artyom Suchkov (fanasew@gmail.com), Wikidi.
 
 Import class with
