@@ -1,0 +1,84 @@
+/** initial setup **/
+.nano {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.nano > .nano-content {
+	position: absolute;
+	overflow: scroll;
+	overflow-x: hidden;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+.nano > .nano-content:focus {
+	outline: thin dotted;
+}
+.nano > .nano-content::-webkit-scrollbar {
+	visibility: hidden;
+}
+.nano > .nano-pane {
+	position: absolute;
+	width: 11px;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	/* Target only IE7 and IE8 with this hack */
+	visibility: hidden\9;
+	opacity: .01;
+	-webkit-transition: .2s;
+	-moz-transition: .2s;
+	-o-transition: .2s;
+	transition: .2s;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+.nano > .nano-pane > .nano-slider {
+	background: rgba(181, 188, 197, 0.25);
+	position: relative;
+	margin: 0 1px;
+	-moz-border-radius: 9px;
+	-webkit-border-radius: 9px;
+	border-radius: 9px;
+}
+.non-selectable {
+	/* No support for these yet, use at own risk */
+	-o-user-select: none;
+	user-select: none;
+	-webkit-user-select: none;
+	/* Chrome all / Safari all */
+	-moz-user-select: none;
+	/* Firefox all */
+	-ms-user-select: none;
+	/* IE 10+ */
+}
+.nano:hover > .nano-pane > .nano-slider {
+	background: rgba(181, 188, 197, 0.65);
+}
+.nano:hover > .nano-pane > .nano-slider:hover {
+	background: #b5bcc5;
+}
+.nano-pane.active > .nano-slider {
+	background: #b5bcc5 !important;
+}
+.nano:hover > .nano-pane,
+.nano-pane.active,
+.nano-pane.flashed {
+	/* Target only IE7 and IE8 with this hack */
+	visibility: visible\9;
+	opacity: 0.99;
+}
+.has-scrollbar > .nano-content::-webkit-scrollbar {
+	visibility: visible;
+}
+.column .nano-content,
+.column .nano-pane {
+	top: 44px;
+}
+.items > :first-child {
+	border-top: 1px solid #EEE;
+}
